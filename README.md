@@ -154,7 +154,7 @@ For each episode:
 5. The recovery outcome is evaluated.
 6. Performance metrics are recorded.
 7. For ResIoT, recovery experience is used to update confidence and learning information.
-8. 
+   
 **Project Structure**
 ResIoT/
 │
