@@ -154,8 +154,69 @@ For each episode:
 5. The recovery outcome is evaluated.
 6. Performance metrics are recorded.
 7. For ResIoT, recovery experience is used to update confidence and learning information.
+
+**##Approaches Evaluated**
+
+The simulator evaluates three approaches under consistent fault scenarios.
+
+**ResIoT**
+
+The proposed multi-agent resilience framework provides:
+
+Distributed lifecycle agents
+Agent-based fault handling
+Cross-agent coordination
+Shared knowledge
+Adaptive recovery selection
+Experience-driven confidence updates
+Rule-Based Baseline
+
+**The Rule-Based baseline uses:**
+
+Predefined fault-handling logic
+Fixed recovery strategies
+Fixed or predefined recovery probabilities
+No continual learning
+ML-Based Baseline
+
+**The ML-Based baseline provides:**
+
+Experience-driven behaviour
+Historical recovery information
+Adaptive recovery performance
+Limited coordination compared with ResIoT
+
+**##Evaluation Metrics**
+
+The simulator evaluates the following metrics:
+
+**Mean Time to Detect (MTTD)**
+
+Measures the average time required to detect a fault.
+
+Lower MTTD indicates faster fault detection.
+
+**Mean Time to Recover (MTTR)**
+
+Measures the average time required to recover from a fault.
+
+Lower MTTR indicates faster recovery.
+
+**Recovery Success**
+
+Records whether the selected recovery action successfully resolves the simulated fault.
+
+**Communication Overhead**
+Measures the number of communication messages generated during fault handling.
+
+This metric is particularly important for ResIoT because multi-agent coordination introduces additional communication compared with simpler baseline approaches.
+
+**Recovery Confidence**
+Tracks the evolution of ResIoT recovery confidence across successive fault episodes.
+
+This metric is used to evaluate experience-driven adaptation.
    
-**Project Structure**
+**##Project Structure**
 ResIoT/
 │
 ├── main.py
